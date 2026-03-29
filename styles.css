@@ -28,6 +28,10 @@ body {
   overflow-x: hidden;
 }
 
+body.intro-active {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -66,6 +70,93 @@ img {
   color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.intro-logo {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--bg) 94%, white 6%);
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 900ms ease;
+  pointer-events: none;
+}
+
+.intro-mark {
+  margin: 0;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(1.1rem, 0.95rem + 1vw, 2rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+body.intro-complete .intro-logo {
+  opacity: 0;
+}
+
+.opening {
+  position: relative;
+  width: min(100%, 1260px);
+  margin-inline: auto;
+  min-height: 180vh;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.opening-canvas {
+  display: grid;
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.opening-frame {
+  margin: 0;
+  border-radius: 2px;
+  overflow: clip;
+  transform: translateY(var(--motion-offset, 0));
+  will-change: transform;
+}
+
+.opening-frame img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(0.94);
+}
+
+.opening-manifesto {
+  position: sticky;
+  top: clamp(12vh, 17vh, 22vh);
+  margin-top: clamp(-82vh, -76vh, -72vh);
+  margin-left: auto;
+  width: min(92%, 640px);
+  padding: clamp(1rem, 2.5vw, 1.8rem);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: blur(3px);
+  border: 1px solid color-mix(in srgb, var(--line) 74%, transparent);
+}
+
+.opening-kicker {
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+  font-size: var(--s-1);
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.opening-manifesto h2 {
+  font-size: clamp(2rem, 1.6rem + 2vw, 3.6rem);
+  margin-bottom: 0.8rem;
+}
+
+.opening-manifesto p {
+  margin: 0;
+  max-width: 34ch;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
+  line-height: 1.26;
+  text-wrap: pretty;
 }
 
 .section {
@@ -227,6 +318,34 @@ a {
 }
 
 @media (min-width: 780px) {
+  .opening {
+    min-height: 230vh;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .opening-canvas {
+    grid-template-columns: 0.95fr 1fr;
+    align-items: start;
+  }
+
+  .opening-frame:nth-child(2) {
+    margin-top: 14vh;
+  }
+
+  .opening-frame:nth-child(3) {
+    grid-column: 1;
+    width: 84%;
+    margin-left: auto;
+    margin-top: -3vh;
+  }
+
+  .opening-manifesto {
+    top: 18vh;
+    margin-top: -145vh;
+    margin-right: 5%;
+  }
+
   .hero {
     grid-template-columns: 1fr 1.2fr;
     align-items: end;
@@ -271,6 +390,18 @@ a {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  body.intro-active {
+    overflow: auto;
+  }
+
+  .intro-logo {
+    transition: none;
+  }
+
+  .opening-frame {
+    transform: none !important;
   }
 
   .reveal {

@@ -1,0 +1,8 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soft light and shadow composition">
+  <rect width="1600" height="1000" fill="#EFE9DE"/>
+  <ellipse cx="1180" cy="150" rx="360" ry="260" fill="#FFFDF8"/>
+  <rect x="120" y="190" width="930" height="640" fill="#D8CFBF"/>
+  <rect x="170" y="240" width="840" height="540" fill="#F6F1E8"/>
+  <path d="M210 720C390 630 560 620 710 690C890 775 1030 740 1190 620V860H210V720Z" fill="#C7BBA8" fill-opacity="0.72"/>
+  <rect x="210" y="820" width="980" height="12" fill="#A99B86"/>
+</svg>

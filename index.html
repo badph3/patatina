@@ -21,7 +21,11 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="intro-active">
+    <div class="intro-logo" aria-hidden="true">
+      <p class="intro-mark">Atelier Serein</p>
+    </div>
+
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header" aria-label="Primary">
@@ -30,6 +34,43 @@
     </header>
 
     <main id="main">
+      <section class="opening" aria-labelledby="opening-title">
+        <div class="opening-canvas" aria-hidden="true">
+          <figure class="opening-frame motion-frame" data-speed="0.06">
+            <img
+              src="assets/images/opening-light.svg"
+              alt=""
+              loading="eager"
+            />
+          </figure>
+          <figure class="opening-frame motion-frame" data-speed="0.09">
+            <img
+              src="assets/images/product-hero.svg"
+              alt=""
+              loading="eager"
+            />
+          </figure>
+          <figure class="opening-frame motion-frame" data-speed="0.05">
+            <img
+              src="assets/images/vessel-detail.svg"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+
+        <div class="opening-manifesto">
+          <p class="opening-kicker">Opening Letter</p>
+          <h2 id="opening-title">A quiet beginning</h2>
+          <p>
+            Before objects, there is attention. Before form, a pause. We begin where light brushes
+            surfaces and leaves almost nothing behind. What follows is not a collection, but a
+            sequence of small presences: made to hold time gently, to stay near your rituals, to
+            speak in low volume. Move slowly. Read with your eyes, then with your hands.
+          </p>
+        </div>
+      </section>
+
       <section class="hero section" aria-labelledby="hero-title">
         <p class="hero-kicker reveal">Independent studio for quiet objects</p>
         <h1 id="hero-title" class="reveal">Atelier<br />Serein</h1>
@@ -45,13 +86,12 @@
       </section>
 
       <section class="manifesto section" aria-labelledby="manifesto-title">
-        <h2 id="manifesto-title" class="section-label reveal">Manifesto</h2>
+        <h2 id="manifesto-title" class="section-label reveal">Studio Note</h2>
         <p class="manifesto-text reveal">
-          We work in the pause between gesture and object. Every line is reduced until it can still
-          breathe; every surface is tuned to hold a little weather, a little memory. We are not
-          interested in novelty that shouts. We prefer forms that stay, that gather fingerprints,
-          dusk, and repetition. What we release is less a product than a small companion for the
-          hour when the room turns quiet and attention finally returns home.
+          We return to the same gestures until they lose urgency and gain clarity. Clay, linen,
+          paper, ash: each material asks for patience before beauty. Our work is assembled in
+          editions, not seasons — pieces meant to age beside books, windows, and familiar evenings.
+          If an object can make a room feel softer without asking for attention, it is finished.
         </p>
       </section>
 
