@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimal vessel illustration">
+  <rect width="1200" height="900" fill="#EFE8DC"/>
+  <ellipse cx="580" cy="670" rx="340" ry="130" fill="#D1C6B5"/>
+  <path d="M470 300C470 235 520 190 585 190H600C665 190 715 235 715 300V510C715 605 647 665 560 665C473 665 405 605 405 510V300H470Z" fill="#F8F5EF"/>
+  <ellipse cx="560" cy="300" rx="155" ry="55" fill="#FDFBF8"/>
+  <ellipse cx="560" cy="300" rx="100" ry="30" fill="#E7DED1"/>
+  <path d="M620 385C620 430 595 465 560 465C525 465 500 430 500 385C500 340 525 305 560 305C595 305 620 340 620 385Z" fill="#E3D7C6" fill-opacity="0.4"/>
+</svg>

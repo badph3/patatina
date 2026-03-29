@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Atelier Serein — a minimal one-page digital letter from an independent creative studio."
+    />
+    <title>Atelier Serein — Letter in Objects</title>
+
+    <!--
+      Design choice: Pair one serif and one sans font for editorial contrast.
+      Kept to 2 families for visual clarity and performance.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" aria-label="Primary">
+      <p class="mark">Edition 03</p>
+      <p class="season">Spring / 2026</p>
+    </header>
+
+    <main id="main">
+      <section class="hero section" aria-labelledby="hero-title">
+        <p class="hero-kicker reveal">Independent studio for quiet objects</p>
+        <h1 id="hero-title" class="reveal">Atelier<br />Serein</h1>
+        <p class="hero-note reveal">A letter in material, light, and silence.</p>
+
+        <figure class="hero-visual reveal" role="img" aria-label="Abstract studio composition">
+          <img
+            src="assets/images/product-hero.svg"
+            alt="Soft abstract composition suggesting porcelain and fabric under morning light"
+            loading="eager"
+          />
+        </figure>
+      </section>
+
+      <section class="manifesto section" aria-labelledby="manifesto-title">
+        <h2 id="manifesto-title" class="section-label reveal">Manifesto</h2>
+        <p class="manifesto-text reveal">
+          We work in the pause between gesture and object. Every line is reduced until it can still
+          breathe; every surface is tuned to hold a little weather, a little memory. We are not
+          interested in novelty that shouts. We prefer forms that stay, that gather fingerprints,
+          dusk, and repetition. What we release is less a product than a small companion for the
+          hour when the room turns quiet and attention finally returns home.
+        </p>
+      </section>
+
+      <section class="product section" aria-labelledby="product-title">
+        <h2 id="product-title" class="section-label reveal">Core Piece</h2>
+
+        <article class="product-card">
+          <div class="product-media reveal">
+            <img
+              src="assets/images/vessel-detail.svg"
+              alt="Minimal porcelain vessel in warm neutral tones"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="product-copy reveal">
+            <h3>Vessel No. 01 — Ash</h3>
+            <p>
+              Hand-finished porcelain vessel for incense, stems, or nothing at all. Designed to be
+              read by light.
+            </p>
+            <p class="price">€120 · Limited release</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="stockists section" aria-labelledby="stockists-title">
+        <h2 id="stockists-title" class="section-label reveal">Stockists</h2>
+        <ul class="stockist-list reveal" aria-label="Selected stockists">
+          <li><span>Linea Gallery</span><span>Milan</span></li>
+          <li><span>North Shelf</span><span>Copenhagen</span></li>
+          <li><span>Atelier Passage</span><span>Kyoto</span></li>
+          <li><span>Still Room</span><span>Lisbon</span></li>
+        </ul>
+      </section>
+
+      <section class="contact section" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="section-label reveal">Contact</h2>
+        <p class="reveal">
+          For notes, collaborations, or private appointments:
+          <a href="mailto:hello@atelierserein.studio">hello@atelierserein.studio</a>
+        </p>
+        <nav class="social reveal" aria-label="Social links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Are.na">Are.na</a>
+          <a href="#" aria-label="Newsletter">Newsletter</a>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>© 2026 Atelier Serein — quietly made.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
