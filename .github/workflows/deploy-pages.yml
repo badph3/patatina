@@ -1,38 +1,13 @@
-name: Deploy static site to GitHub Pages
+name: Legacy Pages workflow (disabled)
 
+# This workflow is intentionally kept disabled because deployment now uses
+# GitHub Pages "Deploy from a branch" (main / root).
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  info:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload static files
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Explain deployment mode
+        run: echo "GitHub Pages deployment is configured from branch (main/root)."

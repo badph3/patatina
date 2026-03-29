@@ -54,25 +54,25 @@ python3 -m http.server 4173
 
 Then open: `http://localhost:4173`
 
-## Publish online with GitHub Pages
+## Publish online with GitHub Pages (Deploy from branch)
 
-This repository includes an automatic deployment workflow:
-
-- `.github/workflows/deploy-pages.yml`
-- Trigger: every push to `main`
+This project can be published directly from the repository branch (no Actions workflow required).
 
 ### One-time GitHub setup
 
 1. Open the repository on GitHub.
 2. Go to **Settings → Pages**.
-3. In **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Push to `main` (or run the workflow manually from **Actions**).
+3. In **Build and deployment**:
+    - **Source**: `Deploy from a branch`
+    - **Branch**: `main`
+    - **Folder**: `/ (root)`
+4. Click **Save**.
 
 Your site URL will be:
 
 - `https://badph3.github.io/patatina/`
 
-After the first successful deploy, GitHub may take 1–3 minutes to publish updates.
+After saving, GitHub usually publishes in 1–3 minutes and each new push to `main` updates the site.
 
 ## Notes on dependencies
 
