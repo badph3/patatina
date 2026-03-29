@@ -54,6 +54,26 @@ python3 -m http.server 4173
 
 Then open: `http://localhost:4173`
 
+## Publish online with GitHub Pages
+
+This repository includes an automatic deployment workflow:
+
+- `.github/workflows/deploy-pages.yml`
+- Trigger: every push to `main`
+
+### One-time GitHub setup
+
+1. Open the repository on GitHub.
+2. Go to **Settings → Pages**.
+3. In **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Push to `main` (or run the workflow manually from **Actions**).
+
+Your site URL will be:
+
+- `https://badph3.github.io/patatina/`
+
+After the first successful deploy, GitHub may take 1–3 minutes to publish updates.
+
 ## Notes on dependencies
 
 No package manager or dependency manifest is required for this version because it is a pure static HTML/CSS/JS build with zero external runtime dependencies.
